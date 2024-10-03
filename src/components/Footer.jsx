@@ -7,13 +7,10 @@ import { NavLink } from "react-router-dom";
 
 const Footer = () => {
     return(
-        <footer className="relative left-1/2 -translate-x-1/2 w-screen mx-auto py-16 mt-16 bg-text1 
-                            lg:flex-row">
-            <div className="flex flex-col items-center gap-8 px-4 mx-auto max-w-screen-xl
-                            lg:flex-row lg:justify-between">
+        <footer className="relative left-1/2 -translate-x-1/2 w-screen mx-auto py-16 bg-text1 lg:flex-row">
+            <div className="flex flex-col items-center gap-8 px-4 mx-auto max-w-screen-xl lg:flex-row lg:justify-between">
                 <p className="text-2xl text-text2 font-extrabold lg:self-start">Escuela de P.I.T</p>
-                <nav className="grid grid-flow-row gap-4 text-text2 text-center
-                                lg:grid-flow-col lg:grid-cols-3 lg:gap-8 lg:text-left">
+                <nav className="grid grid-flow-row gap-4 text-text2 text-center lg:grid-flow-col lg:grid-cols-3 lg:gap-8 lg:text-left">
                     <ul>
                         <li><NavLink to="/">Página Principal</NavLink></li>
                         <li><NavLink to="/cursos">Cursos</NavLink></li>
