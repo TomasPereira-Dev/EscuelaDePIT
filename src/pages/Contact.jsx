@@ -1,12 +1,11 @@
 import { useForm } from "react-hook-form";
 import { useSubmit } from "@formspree/react";
-;  
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTwitter, faReddit, faLinkedin, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { NavLink } from "react-router-dom";  
 
 const Contact = () => {
     
-
-
-
     const { register, handleSubmit, setError, formState: {errors, isSubmitSuccessful, isSubmitting} } = useForm();
 
     const submit = useSubmit("ID DE LA ESCUELA DE PIT, PENDIENTE", 
@@ -29,15 +28,21 @@ const Contact = () => {
             },
           }
       
-    )
+    );
 
     return(
         <main className="p-4">
-            <h1 className="hidden text-4xl text-text1 text-center font-bold lg:block">Contactanos</h1>
-            <p className="hidden text-xl text-text1 text-center lg:block">Estamos encantados de escuchar sobre vos, tu equipo, o como podemos trabajar juntos</p>
-            <section>
-                <h1 className="text-4xl text-text1 text-center font-bold lg:hidden">Contactanos</h1>
-                <p className="text-text1 text-center font-semibold lg:hidden">Estamos encantados de escuchar sobre vos, tu equipo, o como podemos trabajar juntos</p>
+            <section className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8">
+              <div className="space-y-4">
+                <h1 className="text-4xl text-text1 text-center font-bold lg:text-5xl lg:text-left">Contactanos</h1>
+                <p className="text-text1 text-center font-semibold lg:text-left lg:max-w-[36ch]">Estamos encantados de escuchar sobre vos, tu equipo, o como podemos trabajar juntos</p>
+                <ul className="flex gap-2 text-text1">
+                  <li><FontAwesomeIcon icon={faInstagram} size="xl"/></li>
+                  <li><NavLink to="https://x.com"><FontAwesomeIcon icon={faTwitter} size="xl"/></NavLink></li>
+                  <li><NavLink to="https://reddit.com"><FontAwesomeIcon icon={faReddit} size="xl"/></NavLink></li>
+                  <li><NavLink to="https://linkedin.com"><FontAwesomeIcon icon={faLinkedin} size="xl"/></NavLink></li>
+                </ul>
+              </div> 
                 <form className="flex flex-col gap-6"  onSubmit={handleSubmit(submit)}>
                     <label className="flex flex-col">
                         Tu email:

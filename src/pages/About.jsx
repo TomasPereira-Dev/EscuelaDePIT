@@ -52,8 +52,8 @@ const About = () => {
                 </div>
 
             </section>
-            <section className="relative left-1/2 -translate-x-1/2 flex flex-col items-center justify-center gap-4 py-12 px-4 mx-auto w-screen bg-lightBlue1">
-                <h2 className="text-3xl text-text2 text-center font-bold">PREGUNTAS FRECUENTES</h2>
+            <section className="relative left-1/2 -translate-x-1/2 flex flex-col items-center justify-center gap-4 py-12 mx-auto w-screen bg-lightBlue1">
+                <h2 className="text-3xl text-text2 text-center font-bold lg:text-4xl">PREGUNTAS FRECUENTES</h2>
                 <Faq />
             </section>
         </main>

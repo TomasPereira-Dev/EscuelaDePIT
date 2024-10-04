@@ -8,8 +8,8 @@ const ProffessionalsList = () => {
 
     return(
         <main className="flex flex-col gap-8 px-4 pb-16">
-            <section className="relative left-1/2 -translate-x-1/2 w-screen px-4 py-8 mx-auto bg-lightBlue1">
-                <h1 className="text-3xl text-text2 font-bold">Profesionales preparados para atenderte</h1>
+            <section className="relative left-1/2 -translate-x-1/2 w-screen px-4 py-8 mx-auto bg-lightBlue1 lg:py-12">
+                <h1 className="text-3xl text-text2 font-bold lg:text-4xl lg:text-center">Profesionales preparados para atenderte</h1>
             </section>
             <section className="flex flex-col justify-center gap-4">
                 { DB.length > 0 ? <>
@@ -20,7 +20,7 @@ const ProffessionalsList = () => {
                                     <List /> 
                                     <span className="underline self-center">Ver más</span>
                                   </> 
-                :   <div className="flex flex-col gap-2 items-center px-4 py-16 bg-gray rounded-md">
+                :   <div className="flex flex-col items-center self-center gap-2 px-4 py-16 bg-gray rounded-md lg:px-12 lg:py-24 lg:gap-4">
                         <FontAwesomeIcon className="text-text1/50" icon={faMeh} size="5x"/>
                         <h2 className="text-text1 text-center font-semibold">No hay profesionales en esta zona aún.</h2>
                         <div>
