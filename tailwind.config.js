@@ -11,8 +11,8 @@ export default {
       },
       
       backgroundImage: {
-        "cta-mobile": "url('./public/bg-cta-mobile.png')",
-        "cta-desktop": "url('./public/bg-cta-desktop.png')"
+        "cta-mobile": "url('/bg-cta-mobile.png')",
+        "cta-desktop": "url('/bg-cta-desktop.png')"
       },
   
       colors: {

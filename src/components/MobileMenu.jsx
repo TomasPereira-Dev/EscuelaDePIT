@@ -11,7 +11,7 @@ const MobileMenu = ({isOpen ,setIsOpen}) => {
                     <ul className='flex flex-col gap-4 p-6 text-center bg-white rounded-md'>
                         <li className='text-text1/75 font-bold'><NavLink to="/sobre-nosotros">Sobre nosotros</NavLink></li>
                         <li className='text-text1/75 font-bold'><NavLink to="/cursos">Cursos</NavLink></li>
-                        <li className='text-text1/75 font-bold'><NavLink to="/">Articulos</NavLink></li>
+                        <li className='text-text1/75 font-bold'><NavLink to="https://escuela-de-pit-blog.vercel.app/">Articulos</NavLink></li>
                         <li className='text-text1/75 font-bold'><NavLink to="/profesionales">Listado de profesionales</NavLink></li>
                         <li className='text-text1/75 font-bold'><NavLink to="/contacto">Contacto</NavLink></li>
                     </ul>

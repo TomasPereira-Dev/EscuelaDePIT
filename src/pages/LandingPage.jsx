@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSyringe, faCheck, faHandHoldingHeart, faSchool, faVolumeHigh, faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
 import { faReddit } from "@fortawesome/free-brands-svg-icons";
+import { NavLink } from "react-router-dom";
 
 const LandingPage = () => {
 
@@ -15,7 +16,7 @@ const LandingPage = () => {
                     <div className="flex flex-col items-center gap-4 lg:items-start">
                         <h1 className="text-3xl text-text1 text-center font-bold  lg:text-6xl lg:text-left lg:max-w-[16ch] lg:leading-snug">Terapia de inyección perineural</h1>
                         <p className="text-center max-w-[34ch] lg:text-left lg:max-w-[42ch]">Creada por el  Dr. John Lyftogt, usa D5W (dextrosa al 5% en agua estéril) para tratar los nervios dolorosos e inhibir el dolor neuropático crónico.</p>
-                        <a className="text-text2 font-bold w-fit px-8 py-4 bg-lightBlue1 rounded-full" href="/">CAPACITATE</a>
+                        <NavLink className="text-text2 font-bold w-fit px-8 py-4 bg-lightBlue1 rounded-full" to="/cursos">CAPACITATE</NavLink>
                     </div>
                 </section>
                 <section className="grid grid-flow-row gap-6 lg:grid-flow-col lg:place-content-between">
@@ -43,8 +44,8 @@ const LandingPage = () => {
                         <h2 className="text-3xl text-text1 text-center font-bold lg:text-6xl lg:text-left ">No manejes el dolor, Tratalo.</h2>
                         <p className="text-text1 text-center max-w-[32ch] lg:text-left lg:max-w-[58ch]">Combatí el dolor cronico con un tratamiento novedoso, eficaz y seguro. Sin dependencia, sin efectos adversos, solo bienestar</p>
                         <div className="flex gap-2 lg:mt-2 lg:gap-4">
-                            <a href="/" className="px-4 py-2 rounded-full text-xs text-text2 font-semibold bg-lightBlue1 lg:text-base lg:px-6 lg:py-3">Aprendé con nosotros</a>
-                            <a href="/" className="px-4 py-2 rounded-full text-xs text-text2 font-semibold bg-lightBlue1 lg:text-base lg:px-6 lg:py-3 ">Tratá tu dolor ahora</a>
+                            <NavLink to="/cursos" className="px-4 py-2 rounded-full text-xs text-text2 font-semibold bg-lightBlue1 lg:text-base lg:px-6 lg:py-3">Aprendé con nosotros</NavLink>
+                            <NavLink to="/profesionales" className="px-4 py-2 rounded-full text-xs text-text2 font-semibold bg-lightBlue1 lg:text-base lg:px-6 lg:py-3 ">Tratá tu dolor ahora</NavLink>
                         </div>
                     </div>
                 </section>
@@ -80,7 +81,7 @@ const LandingPage = () => {
                 <section className="flex flex-col items-center gap-4 px-2 py-8 bg-cta-mobile bg-no-repeat bg-cover rounded-md
                                     lg:bg-cta-desktop lg:flex-row lg:justify-between lg:px-4 lg:py-12">
                     <h2 className="text-3xl text-text2 text-center font-bold lg:text-left lg:text-4xl lg:max-w-[24ch]">Comenza a cabmiar vidas hoy mismo.</h2>
-                    <a href="/" className="p-4 text-text2 font-bold bg-text1 rounded-full">comenzá hoy</a>
+                    <NavLink to="/cursos" className="p-4 text-text2 font-bold bg-text1 rounded-full">comenzá hoy</NavLink>
                 </section>
             </main>
         </>
