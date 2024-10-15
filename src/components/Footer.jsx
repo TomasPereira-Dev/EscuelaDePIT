@@ -14,7 +14,7 @@ const Footer = () => {
                     <ul>
                         <li><NavLink to="/">Página Principal</NavLink></li>
                         <li><NavLink to="/cursos">Cursos</NavLink></li>
-                        <li><NavLink to="/articulos">Artículos</NavLink></li>
+                        <li><NavLink to="https://escuela-de-pit-blog.vercel.app/">Artículos</NavLink></li>
                         <li><NavLink to="/sobre-nosotros">Sobre Nosotros</NavLink></li>
                     </ul>
                     <ul>

@@ -16,7 +16,7 @@ const Header = () => {
                 <ul className='flex items-center gap-6'>
                     <li className='text-text1/50 font-bold'><NavLink to="/sobre-nosotros">Sobre nosotros</NavLink></li>
                     <li className='text-text1/50 font-bold'><NavLink to="/cursos">Cursos</NavLink></li>
-                    <li className='text-text1/50 font-bold'><NavLink to="/">Articulos</NavLink></li>
+                    <li className='text-text1/50 font-bold'><NavLink to="https://escuela-de-pit-blog.vercel.app/">Articulos</NavLink></li>
                     <li className='text-text1/50 font-bold'><NavLink to="/profesionales">Listado de profesionales</NavLink></li>
                     <li className='text-text1/50 font-bold'><NavLink to="/contacto">Contacto</NavLink></li>
                 </ul>
