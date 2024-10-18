@@ -3,10 +3,11 @@ import { useSubmit } from "@formspree/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTwitter, faReddit, faLinkedin, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { NavLink } from "react-router-dom";  
+import CustomMap from "../components/CustomMap.jsx";
 
 const Contact = () => {
     
-    const { register, handleSubmit, setError, formState: {errors, isSubmitSuccessful, isSubmitting} } = useForm();
+    const { register, handleSubmit, setError, formState: {errors} } = useForm();
 
     const submit = useSubmit("ID DE LA ESCUELA DE PIT, PENDIENTE", 
         {
@@ -31,12 +32,12 @@ const Contact = () => {
     );
 
     return(
-        <main className="p-4">
+        <main className="flex flex-col gap-24 p-4 my-8">
             <section className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8">
               <div className="space-y-4">
                 <h1 className="text-4xl text-text1 text-center font-bold lg:text-5xl lg:text-left">Contactanos</h1>
                 <p className="text-text1 text-center font-semibold lg:text-left lg:max-w-[36ch]">Estamos encantados de escuchar sobre vos, tu equipo, o como podemos trabajar juntos</p>
-                <ul className="flex gap-2 text-text1">
+                <ul className="hidden lg:flex gap-2 text-text1">
                   <li><FontAwesomeIcon icon={faInstagram} size="xl"/></li>
                   <li><NavLink to="https://x.com"><FontAwesomeIcon icon={faTwitter} size="xl"/></NavLink></li>
                   <li><NavLink to="https://reddit.com"><FontAwesomeIcon icon={faReddit} size="xl"/></NavLink></li>
@@ -62,10 +63,15 @@ const Contact = () => {
                     <button className="py-2 px-4 text-text2 font-bold bg-lightBlue1 rounded-full" type="submit">Enviar</button>
                 </form>
             </section>
-            <section>
-                <p className="text-text1/85 text-center font-semibold max-w-[32ch]">Escuela de P.I.T [Direccion] - C.A.B.A <br /> +54 911 5555 555 55 <br /> Horarios de atencion: <br /> Lunes a Viernes: 9:30 A.M - 5:30 P.M</p>
+            <section className="flex flex-col gap-4 items-center lg:flex-row lg:gap-8">
+                <CustomMap />
+                <address className="text-center text-text1/85 font-bold lg:text-xl lg:text-left">
+                  <span className="text-2xl">Escuela de P.I.T </span><br/>
+                  Gurruchaga 2426, Palermo - Ciudad Autonoma de Buenos Aires <br/>
+                  +54 911 5555 555 55 <br/>
+                  Horarios de atencion: Lunes a Viernes: 9:30 A.M - 5:30 P.M
+                </address>                
             </section>
-
         </main>
     )
 };
