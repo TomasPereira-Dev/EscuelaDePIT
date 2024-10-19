@@ -27,7 +27,7 @@ const ProffessionalsList = () => {
                             <p className="text-text1 text-sm text-center">Por el momento no tenemos profesionales en nuestra base de datos por esta zona.</p>
                             <p className="text-text1 text-sm text-center">¿sos medico y todavia no te registraste?</p>
                         </div>
-                        <a href="/" className="text-text2 font-semibold px-4 py-2 bg-lightBlue1 rounded-full">¡sumate ya!</a>
+                        <a href="/" className="text-text2 font-semibold px-4 py-2 bg-lightBlue1 rounded-full transition-colors hover:bg-text1">¡sumate ya!</a>
                     </div> 
                 }
             </section>

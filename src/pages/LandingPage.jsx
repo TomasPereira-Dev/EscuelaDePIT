@@ -16,22 +16,22 @@ const LandingPage = () => {
                     <div className="flex flex-col items-center gap-4 lg:items-start">
                         <h1 className="text-3xl text-text1 text-center font-bold  lg:text-6xl lg:text-left lg:max-w-[16ch] lg:leading-snug">Terapia de inyección perineural</h1>
                         <p className="text-center max-w-[34ch] lg:text-left lg:max-w-[42ch]">Creada por el  Dr. John Lyftogt, usa D5W (dextrosa al 5% en agua estéril) para tratar los nervios dolorosos e inhibir el dolor neuropático crónico.</p>
-                        <NavLink className="text-text2 font-bold w-fit px-8 py-4 bg-lightBlue1 rounded-full" to="/cursos">CAPACITATE</NavLink>
+                        <NavLink className="text-text2 font-bold w-fit px-8 py-4 bg-lightBlue1 rounded-full transition-colors hover:bg-text1" to="/cursos">CAPACITATE</NavLink>
                     </div>
                 </section>
                 <section className="grid grid-flow-row gap-6 lg:grid-flow-col lg:place-content-between">
                     <div className="flex flex-col items-center gap-2 text-center lg:text-left lg:items-start">
-                        <FontAwesomeIcon icon={faSyringe} className="text-text2 p-4 bg-lightBlue1 rounded-full" size="2xl"/>
+                        <FontAwesomeIcon icon={faSyringe} className="text-text2 p-4 bg-lightBlue1 rounded-full w-[32px] h-[32px]" />
                         <h2 className="text-2xl text-text1">De vanguardia</h2>
                         <p className="text-text1 max-w-[28ch]">consiste en una serie de pequeñas inyecciones subcutáneas dirigidas a áreas dolorosas donde los nervios son sensibles, utilizando sustancias no farmacológicas.</p>
                     </div>
                     <div className="flex flex-col items-center gap-2 text-center lg:text-left lg:items-start">
-                        <FontAwesomeIcon icon={faCheck} className="text-text2 p-4 bg-lightBlue1 rounded-full" size="2xl"/>
+                        <FontAwesomeIcon icon={faCheck} className="text-text2 p-4 bg-lightBlue1 rounded-full w-[32px] h-[32px]" />
                         <h2 className="text-2xl text-text1">Éxito asegurado</h2>
                         <p className="text-text1 max-w-[32ch]">Los tratamientos repetidos (6-8 sesiones), resultan en una reducción gradual del dolor, apuntando a una resolución completa. Las tasas de éxito varían entre el 80% y el 100%, dependiendo de la condición. </p>
                     </div>
                     <div className="flex flex-col items-center gap-2 text-center lg:text-left lg:items-start">
-                        <FontAwesomeIcon icon={faHandHoldingHeart} className="text-text2 p-4 bg-lightBlue1 rounded-full" size="2xl"/>
+                        <FontAwesomeIcon icon={faHandHoldingHeart} className="text-text2 p-4 bg-lightBlue1 rounded-full w-[32px] h-[32px]" />
                         <h2 className="text-2xl text-text1">Seguro</h2>
                         <p className="text-text1 max-w-[32ch]">D5W se utiliza como solución intravenosa en hospitales de todo el mundo. Al ser principalmente un tratamiento subcutáneo y usando solo una aguja de media pulgada, el daño se minimiza.</p>
                     </div>
@@ -44,8 +44,8 @@ const LandingPage = () => {
                         <h2 className="text-3xl text-text1 text-center font-bold lg:text-6xl lg:text-left ">No manejes el dolor, Tratalo.</h2>
                         <p className="text-text1 text-center max-w-[32ch] lg:text-left lg:max-w-[58ch]">Combatí el dolor cronico con un tratamiento novedoso, eficaz y seguro. Sin dependencia, sin efectos adversos, solo bienestar</p>
                         <div className="flex gap-2 lg:mt-2 lg:gap-4">
-                            <NavLink to="/cursos" className="px-4 py-2 rounded-full text-xs text-text2 font-semibold bg-lightBlue1 lg:text-base lg:px-6 lg:py-3">Aprendé con nosotros</NavLink>
-                            <NavLink to="/profesionales" className="px-4 py-2 rounded-full text-xs text-text2 font-semibold bg-lightBlue1 lg:text-base lg:px-6 lg:py-3 ">Tratá tu dolor ahora</NavLink>
+                            <NavLink to="/cursos" className="px-4 py-2 rounded-full text-xs text-text2 font-semibold bg-lightBlue1 transition-colors hover:bg-text1 lg:text-base lg:px-6 lg:py-3">Aprendé con nosotros</NavLink>
+                            <NavLink to="/profesionales" className="px-4 py-2 rounded-full text-xs text-text2 font-semibold bg-lightBlue1 transition-colors hover:bg-text1 lg:text-base lg:px-6 lg:py-3">Tratá tu dolor ahora</NavLink>
                         </div>
                     </div>
                 </section>
@@ -81,7 +81,7 @@ const LandingPage = () => {
                 <section className="flex flex-col items-center gap-4 px-2 py-8 bg-cta-mobile bg-no-repeat bg-cover rounded-md
                                     lg:bg-cta-desktop lg:flex-row lg:justify-between lg:px-4 lg:py-12">
                     <h2 className="text-3xl text-text2 text-center font-bold lg:text-left lg:text-4xl lg:max-w-[24ch]">Comenza a cabmiar vidas hoy mismo.</h2>
-                    <NavLink to="/cursos" className="p-4 text-text2 font-bold bg-text1 rounded-full">comenzá hoy</NavLink>
+                    <NavLink to="/cursos" className="p-4 text-text2 font-bold bg-text1 rounded-full transition-colors hover:bg-text2 hover:text-text1">comenzá hoy</NavLink>
                 </section>
             </main>
         </>

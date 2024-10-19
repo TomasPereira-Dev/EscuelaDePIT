@@ -25,7 +25,7 @@ const Courses = () => {
                             <p className="text-text1 text-center lg:text-left">4 clases semanales de 4 horas</p>
                             <p className="text-text1 text-center lg:text-left">Cupos limitados</p>
                         </div>
-                        <NavLink to="/cursos/curso" className="text-text2 font-semibold px-8 py-2 bg-lightBlue1 rounded-md">Ver Curso</NavLink>
+                        <NavLink to="/cursos/curso" className="text-text2 font-semibold px-8 py-2 bg-lightBlue1 rounded-md transition-colors hover:bg-text1">Ver Curso</NavLink>
                     </div>
                 </div>
             </section>

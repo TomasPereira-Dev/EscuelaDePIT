@@ -22,7 +22,7 @@ const Product = () => {
                         <p className="text-text1 text-sm">Clases por semana: 4, de 4 horas de duración.</p>
                         <p className="text-text1 text-sm">Pre-requisitos: lorem ipsum sit amet ...</p>
                     </div>
-                    <button className="px-4 py-2 text-text2 font-bold bg-lightBlue1 rounded-md">COMPRAR</button>
+                    <button className="px-4 py-2 text-text2 font-bold bg-lightBlue1 rounded-md transition-colors hover:bg-text1">COMPRAR</button>
                 </div>
                 <div className="col-span-2">
                     <h2 className="text-text1 text-2xl font-bold my-4">Contenido:</h2>

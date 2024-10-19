@@ -7,7 +7,7 @@ const Question = ({question, awnser}) => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <li className="flex flex-col py-4 bg-text2 lg:px-12" onClick={() => {setIsOpen(!isOpen)}}>
+        <li className="flex flex-col py-4 bg-text2 lg:px-12 cursor-pointer" onClick={() => {setIsOpen(!isOpen)}}>
             <div className="flex justify-between items-center gap-4">
                 <h3 className="text-xl font-semibold">{question}</h3>
                 <button onClick={() => {setIsOpen(!isOpen)}}>

@@ -38,10 +38,10 @@ const Contact = () => {
                 <h1 className="text-4xl text-text1 text-center font-bold lg:text-5xl lg:text-left">Contactanos</h1>
                 <p className="text-text1 text-center font-semibold lg:text-left lg:max-w-[36ch]">Estamos encantados de escuchar sobre vos, tu equipo, o como podemos trabajar juntos</p>
                 <ul className="hidden lg:flex gap-2 text-text1">
-                  <li><FontAwesomeIcon icon={faInstagram} size="xl"/></li>
-                  <li><NavLink to="https://x.com"><FontAwesomeIcon icon={faTwitter} size="xl"/></NavLink></li>
-                  <li><NavLink to="https://reddit.com"><FontAwesomeIcon icon={faReddit} size="xl"/></NavLink></li>
-                  <li><NavLink to="https://linkedin.com"><FontAwesomeIcon icon={faLinkedin} size="xl"/></NavLink></li>
+                  <li className="transition-colors hover:text-lightBlue1"><NavLink to="https://instagram.com"><FontAwesomeIcon icon={faInstagram} size="xl"/></NavLink></li>
+                  <li className="transition-colors hover:text-lightBlue1"><NavLink to="https://x.com"><FontAwesomeIcon icon={faTwitter} size="xl"/></NavLink></li>
+                  <li className="transition-colors hover:text-lightBlue1"><NavLink to="https://reddit.com"><FontAwesomeIcon icon={faReddit} size="xl"/></NavLink></li>
+                  <li className="transition-colors hover:text-lightBlue1"><NavLink to="https://linkedin.com"><FontAwesomeIcon icon={faLinkedin} size="xl"/></NavLink></li>
                 </ul>
               </div> 
                 <form className="flex flex-col gap-6"  onSubmit={handleSubmit(submit)}>
@@ -60,7 +60,7 @@ const Contact = () => {
                         <textarea className="p-4 border-b border-lightBlue1/75 focus:outline focus:outline-lightBlue1/75 caret-lightBlue1/75" name="message" {...register("message", {required: true})} />
                         {errors.message && <span className="text-error">Por favor escriba su mensaje.</span>}
                     </label>
-                    <button className="py-2 px-4 text-text2 font-bold bg-lightBlue1 rounded-full" type="submit">Enviar</button>
+                    <button className="py-2 px-4 text-text2 font-bold bg-lightBlue1 rounded-full transition-colors hover:bg-text1" type="submit">Enviar</button>
                 </form>
             </section>
             <section className="flex flex-col gap-4 items-center lg:flex-row lg:gap-8">

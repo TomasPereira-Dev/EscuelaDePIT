@@ -12,21 +12,21 @@ const Footer = () => {
                 <p className="text-2xl text-text2 font-extrabold lg:self-start">Escuela de P.I.T</p>
                 <nav className="grid grid-flow-row gap-4 text-text2 text-center lg:grid-flow-col lg:grid-cols-3 lg:gap-8 lg:text-left">
                     <ul>
-                        <li><NavLink to="/">Página Principal</NavLink></li>
-                        <li><NavLink to="/cursos">Cursos</NavLink></li>
-                        <li><NavLink to="https://escuela-de-pit-blog.vercel.app/">Artículos</NavLink></li>
-                        <li><NavLink to="/sobre-nosotros">Sobre Nosotros</NavLink></li>
+                        <li className="hover:underline"><NavLink  to="/">Página Principal</NavLink></li>
+                        <li className="hover:underline"><NavLink  to="/cursos">Cursos</NavLink></li>
+                        <li className="hover:underline"><NavLink  to="https://escuela-de-pit-blog.vercel.app/">Artículos</NavLink></li>
+                        <li className="hover:underline"><NavLink  to="/sobre-nosotros">Sobre Nosotros</NavLink></li>
                     </ul>
                     <ul>
-                        <li><NavLink to="/profesionales">Listado de profesionales</NavLink></li>
-                        <li><NavLink to="https://reddit.com">Comunidad</NavLink></li>
-                        <li><NavLink to="/contacto">Contacto</NavLink></li>
+                        <li className="hover:underline"><NavLink to="/profesionales">Listado de profesionales</NavLink></li>
+                        <li className="hover:underline"><NavLink to="https://reddit.com">Comunidad</NavLink></li>
+                        <li className="hover:underline"><NavLink to="/contacto">Contacto</NavLink></li>
                     </ul>
                     <ul className="flex justify-center gap-2 text-text2">
-                        <li><FontAwesomeIcon icon={faInstagram} size="xl"/></li>
-                        <li><NavLink to="https://x.com"><FontAwesomeIcon icon={faTwitter} size="xl"/></NavLink></li>
-                        <li><NavLink to="https://reddit.com"><FontAwesomeIcon icon={faReddit} size="xl"/></NavLink></li>
-                        <li><NavLink to="https://linkedin.com"><FontAwesomeIcon icon={faLinkedin} size="xl"/></NavLink></li>
+                        <li><NavLink to="https://instagram.com"><FontAwesomeIcon className="transition-colors hover:text-lightBlue1" icon={faInstagram} size="xl"/></NavLink></li>
+                        <li><NavLink to="https://x.com"><FontAwesomeIcon className="transition-colors hover:text-lightBlue1" icon={faTwitter} size="xl"/></NavLink></li>
+                        <li><NavLink to="https://reddit.com"><FontAwesomeIcon className="transition-colors hover:text-lightBlue1" icon={faReddit} size="xl"/></NavLink></li>
+                        <li><NavLink to="https://linkedin.com"><FontAwesomeIcon className="transition-colors hover:text-lightBlue1" icon={faLinkedin} size="xl"/></NavLink></li>
                     </ul>
                 </nav>
             </div>
