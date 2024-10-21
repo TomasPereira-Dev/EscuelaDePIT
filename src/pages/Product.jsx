@@ -6,8 +6,8 @@ const Product = () => {
                 <h1 className="text-text1 text-2xl font-bold lg:text-4xl">Curso Intensivo De P.I.T</h1>
                 <p className="text-text1 text text-center lg:text-left lg:max-w-[46ch]">Aprende las bases del P.I.T, las mejores practicas y todo lo que nesesitas para comenzar a tratar a tus pacientes.</p>
             </section>
-            <section className="grid grid-cols-1 gap-6 lg:grid-cols-3 lg:gap-12">
-                <div className="flex flex-col gap-4 ">
+            <section className="grid grid-cols-1 gap-y-6 lg:grid-cols-3 lg:gap-12">
+                <div className="flex flex-col gap-4">
                     <div className="p-4 bg-grayishBlue1/25 rounded-md">
                         <h2 className="mb-2 text-2xl text-text1 font-bold">Incluye:</h2>
                         <ul className="flex flex-col gap-2">

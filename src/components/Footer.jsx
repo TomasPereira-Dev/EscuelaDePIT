@@ -7,10 +7,10 @@ import { NavLink } from "react-router-dom";
 
 const Footer = () => {
     return(
-        <footer className="relative left-1/2 -translate-x-1/2 w-screen mx-auto py-16 bg-text1 lg:flex-row">
-            <div className="flex flex-col items-center gap-8 px-4 mx-auto max-w-screen-xl lg:flex-row lg:justify-between">
-                <p className="text-2xl text-text2 font-extrabold lg:self-start">Escuela de P.I.T</p>
-                <nav className="grid grid-flow-row gap-4 text-text2 text-center lg:grid-flow-col lg:grid-cols-3 lg:gap-8 lg:text-left">
+        <footer className="relative left-1/2 -translate-x-1/2 w-screen mx-auto py-16 bg-text1 md:flex-row">
+            <div className="flex flex-col items-center gap-8 px-4 mx-auto max-w-screen-xl md:flex-row md:justify-between">
+                <p className="text-2xl text-text2 font-extrabold md:self-start">Escuela de P.I.T</p>
+                <nav className="grid grid-flow-row gap-4 text-text2 text-center md:grid-flow-col md:grid-cols-3 md:gap-8 md:text-left">
                     <ul>
                         <li className="hover:underline"><NavLink  to="/">Página Principal</NavLink></li>
                         <li className="hover:underline"><NavLink  to="/cursos">Cursos</NavLink></li>
@@ -30,7 +30,6 @@ const Footer = () => {
                     </ul>
                 </nav>
             </div>
-
         </footer>
     )
 };
