@@ -38,7 +38,7 @@ const LandingPage = () => {
                 </section>
                 <section className="flex flex-col items-center gap-2 lg:flex-row lg:gap-8">
                     <picture>
-                        <img src="./doctor.png" alt="una imagen de un doctor mirando con esperanza" />
+                        <img src="./doctor.webp" alt="una imagen de un doctor mirando con esperanza" />
                     </picture>
                     <div className="flex flex-col items-center gap-2 lg:items-start">
                         <h2 className="text-3xl text-text1 text-center font-bold lg:text-6xl lg:text-left ">No manejes el dolor, Tratalo.</h2>
@@ -67,15 +67,15 @@ const LandingPage = () => {
                         </div>
                     </div>
                 </section>
-                <section className="relative flex flex-col items-center gap-2 md:gap-4 lg:flex-row lg:gap-8">
-                    <picture className="md:w-full">
-                        <source srcSet="./testimonial-desktop.png" media="(min-width: 1024px)"/>
-                        <img  className="block w-full max-h-[375px]" src="./testimonial.png" alt="El doctor Heno Pigerl posando junto al doctor Ricardo Frusso" />
+                <section className="relative flex flex-col items-center gap-2 md:gap-4 md:flex-row lg:gap-8">
+                    <picture>
+                        <source srcSet="./testimonial-desktop.webp" media="(min-width: 768px)"/>
+                        <img  src="./testimonial.webp" alt="El doctor Heno Pigerl posando junto al doctor Ricardo Frusso" />
                     </picture>
                     <FontAwesomeIcon className="absolute -top-10 left-0 text-text1/75" icon={faQuoteLeft} size="5x"/>
                     <div>
-                        <p className="text-text1/75 text-center font-semibold max-w-[32ch] lg:text-left md:max-w-[52ch] lg:text-lg">&quot;Aprender esta técnica ha cambiado nuestra forma de trabajar. Es algo que da alegría tanto al paciente como al médico. ¡Cada día volvemos felices a casa con la sensación de haber mejorado la calidad de vida de una persona! Eso no tiene precio. Por eso queremos que el mundo lo conozca.&quot;</p>
-                        <p className="mt-2 text-text1 text-center font-semibold lg:text-left">Heno Pigerl<br /> Cofundador de la escuela de P.I.T</p>
+                        <p className="text-text1/75 text-center font-semibold max-w-[32ch] md:text-left md:max-w-[52ch] lg:text-lg">&quot;Aprender esta técnica ha cambiado nuestra forma de trabajar. Es algo que da alegría tanto al paciente como al médico. ¡Cada día volvemos felices a casa con la sensación de haber mejorado la calidad de vida de una persona! Eso no tiene precio. Por eso queremos que el mundo lo conozca.&quot;</p>
+                        <p className="mt-2 text-text1 text-center font-semibold md:text-left">Heno Pigerl<br /> Cofundador de la escuela de P.I.T</p>
                     </div>
                 </section>
                 <section className="flex flex-col items-center gap-4 px-2 py-8 bg-cta-mobile bg-no-repeat bg-cover rounded-md
