@@ -1,0 +1,1 @@
+GET  http://localhost:3000/cursos?slug=curso-intensivo-de-pit
