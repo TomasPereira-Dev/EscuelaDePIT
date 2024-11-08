@@ -25,3 +25,5 @@ export const productsDb = connectToProductsDatabase();
 app.listen(port, () => {
     console.log("el servidor corre en localhost", port);
 })
+
+export default app;
