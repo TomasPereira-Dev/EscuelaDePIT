@@ -6,7 +6,7 @@ import axios from "axios";
 const Courses = () => {
 
     const fetcher = url => axios.get(url).then(res => res.data);
-    const { data } = useSWR("http://localhost:3000/cursos" , fetcher);
+    const { data } = useSWR("https://escuela-de-pit-server.vercel.app/cursos" , fetcher);
 
     const mappedList = data && data.map(course => <Course key={course._id} data={course}/> );
 

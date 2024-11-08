@@ -12,7 +12,7 @@ const ProffessionalsList = () => {
     const [listIsOver, setListIsOver] = useState(false);
 
     const fetcher = url => axios.get(url).then(res => res.data);
-    const { data } = useSWR("http://localhost:3000/profesionales" ,fetcher);
+    const { data } = useSWR("https://escuela-de-pit-server.vercel.app/profesionales" ,fetcher);
 
     const listLength = 25;
 
