@@ -6,7 +6,7 @@ const Product = () => {
     const { param } = useParams();
 
     const fetcher = url => axios.get(url).then(res => res.data);
-    const { data } = useSWR(`http://localhost:3000/cursos?slug=${param}` , fetcher);
+    const { data } = useSWR(`https://escuela-de-pit-server.vercel.app/cursos?slug=${param}` , fetcher);
 
 
     const ContentListItem = ({contentData}) => {
