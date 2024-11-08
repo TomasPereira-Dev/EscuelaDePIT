@@ -1,10 +1,14 @@
 import express from "express"; 
 import cors from "cors";
-import "./loadEnviroment.js";
+import dotenv from "dotenv";
+import "dotenv/config";
 import { connectToPeopleDatabase } from "./DB/connect.js";
 import { connectToProductsDatabase } from "./DB/connect.js";
 import { profesionalesRouter } from "./routes/profesionales.js";
 import { cursosRouter } from "./routes/cursos.js";
+
+
+dotenv.config();
 
 const app =  express();
 const port = process.env.PORT ?? 3000;
