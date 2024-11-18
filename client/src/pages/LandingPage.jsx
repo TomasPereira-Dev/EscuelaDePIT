@@ -15,7 +15,7 @@ const LandingPage = () => {
                     </picture>
                     <div className="flex flex-col items-center gap-4 lg:items-start">
                         <h1 className="text-3xl text-text1 text-center font-bold  lg:text-6xl lg:text-left lg:max-w-[16ch] lg:leading-snug">Terapia de inyección perineural</h1>
-                        <p className="text-center max-w-[34ch] lg:text-left lg:max-w-[42ch]">Creada por el  Dr. John Lyftogt, usa D5W (dextrosa al 5% en agua estéril) para tratar los nervios dolorosos e inhibir el dolor neuropático crónico.</p>
+                        <p className="text-text1 text-center max-w-[34ch] lg:text-left lg:max-w-[42ch]">Creada por el  Dr. John Lyftogt, usa D5W (dextrosa al 5% en agua estéril) para tratar los nervios dolorosos e inhibir el dolor neuropático crónico.</p>
                         <NavLink className="text-text2 font-bold w-fit px-8 py-4 bg-lightBlue1 rounded-full transition-colors hover:bg-text1" to="/cursos">CAPACITATE</NavLink>
                     </div>
                 </section>
