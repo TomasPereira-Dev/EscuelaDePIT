@@ -26,7 +26,7 @@ const About = () => {
                     <div className="space-y-4">
                         <h2 className="text-3xl text-text1 font-bold lg:text-5xl">Nuestro metodo</h2>
                         <p className="text-text1 md:max-w-[64ch]">Nuestro método innovador asegura que aprendas primero lo más útil y lo hagas de manera que nunca lo olvides.</p>
-                        <p className="text-text1 md:max-w-[64ch]">Combinamos cursos presenciales, virtuales, foros, página web e Instagram para que pronto puedas comenzar a tratar a tus pacientes. Después de cada curso, comienza la acción y la magia de poder tratar a tus pacientes y devolver una sonrisa al mundo. Te guiaremos desde el primer minuto y permaneceremos en contacto permanente para </p>
+                        <p className="text-text1 md:max-w-[64ch]">Combinamos cursos presenciales, virtuales, foros, página web e Instagram para que pronto puedas comenzar a tratar a tus pacientes. Después de cada curso, comienza la acción y la magia de poder tratar a tus pacientes y devolver una sonrisa al mundo.</p>
                     </div>   
                 </div>
             </section>
@@ -59,6 +59,7 @@ const About = () => {
             </section>
             <section className="relative left-1/2 -translate-x-1/2 flex flex-col items-center justify-center gap-4 px-4 py-12 mx-auto w-screen bg-lightBlue1">
                 <h2 className="text-3xl text-text2 text-center font-bold lg:text-4xl">PREGUNTAS FRECUENTES</h2>
+                <h3 className="mb-2 text-lg text-text2 text-center max-w-[27ch] font-bold md:max-w-[52ch]">El Tratamiento de Inyecciones Perineurales (P.I.T.), desarrollado por el Dr. John Lyftogt, está ganando popularidad como una opción efectiva para tratar el dolor crónico. Sin embargo, como con cualquier tratamiento novedoso, es normal que surjan dudas antes de probarlo. Si estás considerando P.I.T. para aliviar el dolor neuropático o crónico, aquí te respondemos algunas de las preguntas más comunes que los pacientes suelen tener.</h3>
                 <Faq />
             </section>
         </main>

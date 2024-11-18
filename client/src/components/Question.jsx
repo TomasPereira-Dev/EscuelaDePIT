@@ -14,7 +14,7 @@ const Question = ({question, awnser}) => {
                     {isOpen ? <FontAwesomeIcon icon={faMinus}/> : <FontAwesomeIcon icon={faPlus}/>}
                 </button>
             </div>
-            <p className={`${isOpen ? 'block' : 'hidden'}`}>{awnser}</p>
+            <p className={`${isOpen ? 'block' : 'hidden'} max-w-[52ch]`}>{awnser}</p>
         </li>
     )
 };
