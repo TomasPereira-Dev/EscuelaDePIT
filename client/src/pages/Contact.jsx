@@ -57,7 +57,7 @@ const Contact = () => {
                   </label>
                   <label className="flex flex-col">
                       Tu mensaje:
-                      <textarea className="p-4 border-b border-lightBlue1/75 focus:outline focus:outline-lightBlue1/75 caret-lightBlue1/75" name="message" {...register("message", {required: true})} />
+                      <textarea className="p-4 border-b border-lightBlue1/75 resize-none  focus:outline focus:outline-lightBlue1/75 caret-lightBlue1/75" name="message" {...register("message", {required: true})} />
                       {errors.message && <span className="text-error">Por favor escriba su mensaje.</span>}
                   </label>
                   <button className="py-2 px-4 text-text2 font-bold bg-lightBlue1 rounded-full transition-colors hover:bg-text1" type="submit">Enviar</button>
